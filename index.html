@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flashline EMS — Electronics Manufacturing Services | PCB Fabrication to Box Build</title>
+  <meta name="description" content="Flashline EMS is a turnkey electronics manufacturing partner — PCB design, fabrication up to 60-layer HDI, SMT assembly down to 01005, and complete box-build. 100,000+ sq ft facility, ISO 9001 & AS9100D processes.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23f7f5f1'/><path d='M8 22 L14 10 L18 10 L12 22 Z M15 22 L21 10 L24 10 L18 22 Z' fill='%23c96a1e'/></svg>">
+</head>
+<body>
+
+  <header class="rail" id="rail">
+    <a class="rail-logo" href="#top" aria-label="Flashline EMS home">
+      <svg viewBox="0 0 32 32" width="34" height="34" aria-hidden="true">
+        <rect width="32" height="32" rx="6" fill="none" stroke="var(--copper)" stroke-width="1.5"/>
+        <path d="M8 22 L14 10 L18 10 L12 22 Z M15 22 L21 10 L24 10 L18 22 Z" fill="var(--copper)"/>
+      </svg>
+      <span class="rail-logo-text">FLASHLINE<em>EMS</em></span>
+    </a>
+
+    <button type="button" class="rail-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="rail-nav" id="railNav" aria-label="Main">
+      <a href="#services"><i>01</i>Services</a>
+      <a href="#capabilities"><i>02</i>Capabilities</a>
+      <a href="#industries"><i>03</i>Industries</a>
+      <a href="#process"><i>04</i>Process</a>
+      <a href="#tour"><i>05</i>Tour</a>
+      <a href="#about"><i>06</i>Company</a>
+      <a href="#contact"><i>07</i>Contact</a>
+    </nav>
+
+    <div class="rail-foot">
+      <a class="rail-cta" href="#contact">Get a Quote</a>
+      <p class="rail-meta">ISO 9001 · AS9100D<br>IPC-certified technicians</p>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ══════════ HERO — PCB PRODUCTION LINE ══════════ -->
+    <section class="hero hero-line" aria-label="Intro">
+      <div class="hero-bg" aria-hidden="true"></div>
+
+      <div class="hero-inner">
+        <p class="kicker reveal"><span class="tick"></span>Electronics Manufacturing Services · India</p>
+        <h1 class="reveal">Design. Fabricate.<br>Assemble. <span class="accent">Ship.</span></h1>
+        <p class="hero-sub reveal">A single production line from Gerber files to boxed product —
+        60-layer HDI fabrication, 01005-capable SMT assembly, and turnkey box-build
+        inside one 100,000+ sq ft Industry 4.0 facility.</p>
+        <div class="hero-actions reveal">
+          <a class="btn btn-solid" href="#contact">Request a Quote</a>
+          <a class="btn btn-ghost" href="#capabilities">View Capabilities</a>
+        </div>
+        <ul class="chip-row reveal" aria-label="Highlights">
+          <li>TURNKEY EMS</li>
+          <li>60-LAYER HDI</li>
+          <li>01005 SMT</li>
+          <li>AS9100D-ALIGNED</li>
+          <li>IPC CERTIFIED</li>
+        </ul>
+
+        <aside class="telemetry reveal" aria-label="Representative line telemetry">
+          <div class="tele-head"><span class="tick"></span>LINE TELEMETRY</div>
+          <dl>
+            <div><dt>LINE-01 · AIMEX II</dt><dd class="ok">RUNNING</dd></div>
+            <div><dt>LINE-02 · AIMEX II</dt><dd class="ok">RUNNING</dd></div>
+            <div><dt>REFLOW ZONE-7</dt><dd>245.3 °C</dd></div>
+            <div><dt>PLACEMENT RATE</dt><dd>42,300 CPH</dd></div>
+            <div><dt>AOI YIELD · 24 H</dt><dd>99.82 %</dd></div>
+            <div><dt>ACTIVE LOTS</dt><dd>17</dd></div>
+          </dl>
+          <p class="tele-note">REPRESENTATIVE LINE DATA</p>
+        </aside>
+
+        <div class="hero-strip reveal" role="list" aria-label="Key figures">
+          <div role="listitem"><b data-count="100000">0</b><span>sq ft facility</span></div>
+          <div role="listitem"><b data-count="60">0</b><span>layer HDI fabrication</span></div>
+          <div role="listitem"><b data-count="40">0</b><span>qualified engineers</span></div>
+          <div role="listitem"><b data-count="25">0</b><span>years of expertise</span></div>
+        </div>
+      </div>
+
+      <div class="fingers" aria-hidden="true"></div>
+    </section>
+
+    <!-- ══════════ EVENT — ELECTRONICA INDIA 2026 ══════════ -->
+    <aside class="event-band reveal" id="event" aria-label="Upcoming exhibition">
+      <div class="event-body">
+        <p class="event-kicker"><span class="tick"></span>UPCOMING EVENT <span class="event-status" id="eventStatus"></span></p>
+        <h2>Meet us at electronica India &amp;<br>productronica India 2026</h2>
+        <p class="event-where">
+          <span><b>SEP 16–18, 2026</b></span>
+          <span>BIEC · BENGALURU</span>
+          <span><b>HALL 4 · BOOTH H4.F122</b></span>
+        </p>
+        <p class="event-copy">Come see how we take a product from bare board to box build —
+        live demos, our engineering team on the floor, and a first look at our latest
+        line capabilities. Drop by, or lock in a time that suits you.</p>
+        <div class="event-actions">
+          <a class="btn btn-solid" href="https://mmiconnect.in/app/catalogue/exhibitor-detail/ep-blr-2026/123/87a1093b-3367-4a1f-8e1d-cd2f6efb81dd" target="_blank" rel="noopener">View Exhibitor Profile ↗</a>
+          <a class="btn btn-ghost" href="mailto:sales@flashlineems.com?subject=Meeting%20at%20electronica%20India%202026%20(Booth%20H4.F122)">Book a Booth Meeting</a>
+        </div>
+      </div>
+      <figure class="event-photo">
+        <img src="assets/event-booth.jpg" alt="Flashline EMS exhibition booth — from concept to production">
+        <figcaption>OUR BOOTH — HALL 4 · H4.F122 · BIEC</figcaption>
+      </figure>
+    </aside>
+
+    <!-- ══════════ SERVICES ══════════ -->
+    <section class="section" id="services">
+      <div class="section-head reveal">
+        <span class="section-no">01</span>
+        <h2>Four services.<br>One accountable partner.</h2>
+        <p>Most products pass through four hands before they ship. Ours pass through one roof —
+        which is why they ship on time.</p>
+      </div>
+
+      <div class="svc-list">
+        <article class="svc reveal">
+          <span class="svc-no">S/01</span>
+          <h3>Engineering Design</h3>
+          <p>Expert CAM engineers translate your schematics into manufacturable reality —
+          PCB layout, DFM/DFA review, and electromechanical design that anticipates the
+          production line instead of fighting it.</p>
+          <ul class="svc-tags"><li>CAM engineering</li><li>DFM / DFA</li><li>Electromechanical design</li></ul>
+        </article>
+        <article class="svc reveal">
+          <span class="svc-no">S/02</span>
+          <h3>PCB Fabrication</h3>
+          <p>Prototype to production runs of rigid, rigid-flex, metal-core and HDI boards —
+          up to 60 layers — backed by first-article inspection on every new part number.</p>
+          <ul class="svc-tags"><li>60-layer HDI</li><li>Rigid-flex</li><li>Metal-core</li><li>Prototype → volume</li></ul>
+        </article>
+        <article class="svc reveal">
+          <span class="svc-no">S/03</span>
+          <h3>PCB Assembly</h3>
+          <p>Two automated Fuji Aimex II SMT lines place components from 01005 chips to
+          75&nbsp;mm BGAs at 30-micron accuracy, with 3D optical inspection, X-ray, and
+          nitrogen reflow in-house.</p>
+          <ul class="svc-tags"><li>01005 → 75 mm BGA</li><li>SMD + mixed technology</li><li>3D AOI + X-ray</li></ul>
+        </article>
+        <article class="svc reveal">
+          <span class="svc-no">S/04</span>
+          <h3>Box Build</h3>
+          <p>Complete product integration — enclosures, cable harnesses, firmware loading,
+          functional and environmental test, and packaging. Your product arrives ready to sell,
+          not ready to assemble.</p>
+          <ul class="svc-tags"><li>Full integration</li><li>Functional test</li><li>Turnkey delivery</li></ul>
+        </article>
+      </div>
+
+      <figure class="band-photo reveal">
+        <img src="assets/smt-lines.jpg" alt="Flashline EMS automated SMT assembly lines">
+        <figcaption>OUR SMT LINES — 01005 CHIPS TO 75 MM BGAS, ±30 µM PLACEMENT</figcaption>
+      </figure>
+    </section>
+
+    <!-- ══════════ CAPABILITIES / SPEC SHEET ══════════ -->
+    <section class="section section-alt" id="capabilities">
+      <div class="section-head reveal">
+        <span class="section-no">02</span>
+        <h2>The spec sheet,<br>not the sales pitch.</h2>
+        <p>Engineers choose partners on numbers. Here are ours.</p>
+      </div>
+
+      <div class="spec-grid">
+        <div class="spec-card reveal">
+          <h3>// Placement</h3>
+          <dl>
+            <div><dt>Smallest component</dt><dd>01005 (0402 metric)</dd></div>
+            <div><dt>Largest component</dt><dd>74 × 74 mm, height ≤ 25.4 mm</dd></div>
+            <div><dt>Chip accuracy</dt><dd>±50 µm</dd></div>
+            <div><dt>IC accuracy</dt><dd>±30 µm</dd></div>
+            <div><dt>BGA range</dt><dd>0.15 mm ball → 75 × 75 mm</dd></div>
+          </dl>
+        </div>
+        <div class="spec-card reveal">
+          <h3>// Board handling</h3>
+          <dl>
+            <div><dt>Minimum PCB</dt><dd>48 × 48 mm</dd></div>
+            <div><dt>Maximum PCB</dt><dd>774 × 686 mm</dd></div>
+            <div><dt>Thin boards</dt><dd>&lt; 0.3 mm supported</dd></div>
+            <div><dt>Fabrication</dt><dd>HDI to 60 layers, rigid-flex, metal-core</dd></div>
+          </dl>
+        </div>
+        <div class="spec-card reveal">
+          <h3>// Line equipment</h3>
+          <dl>
+            <div><dt>SMT lines</dt><dd>2 × Fuji Aimex II (automated)</dd></div>
+            <div><dt>Inspection</dt><dd>Koh Young 3D Zenith Alpha HS+</dd></div>
+            <div><dt>Reflow</dt><dd>Nitrogen-capable oven</dd></div>
+            <div><dt>Feeder capacity</dt><dd>222 × 8 mm feeders + 10 tray positions</dd></div>
+          </dl>
+        </div>
+        <div class="spec-card reveal">
+          <h3>// Test &amp; finish</h3>
+          <dl>
+            <div><dt>Inspection</dt><dd>X-ray, 3D AOI, FAI on new parts</dd></div>
+            <div><dt>Test</dt><dd>Functional, burn-in, environmental</dd></div>
+            <div><dt>Rework</dt><dd>BGA rework &amp; re-balling</dd></div>
+            <div><dt>Coating</dt><dd>In-house conformal coating</dd></div>
+          </dl>
+        </div>
+      </div>
+
+      <div class="stackup reveal" role="img" aria-label="Cross-section diagram of a 60-layer HDI PCB stack-up">
+        <div class="stackup-head">
+          <h3>// HDI stack-up — cross-section</h3>
+          <span>UP TO 60 COPPER LAYERS · BLIND, BURIED &amp; THROUGH VIAS</span>
+        </div>
+        <svg viewBox="0 0 960 216" aria-hidden="true">
+          <g fill="var(--muted)" font-size="11" text-anchor="end">
+            <text x="58" y="31">L1</text>
+            <text x="58" y="53">L2</text>
+            <text x="58" y="78">L3</text>
+            <text x="58" y="147">L58</text>
+            <text x="58" y="172">L59</text>
+            <text x="58" y="192">L60</text>
+          </g>
+          <g>
+            <rect x="70" y="18" width="820" height="5" fill="var(--green)" opacity=".75"/>
+            <rect x="70" y="23" width="820" height="9" fill="var(--copper)"/>
+            <rect x="70" y="32" width="820" height="12" fill="var(--trace)"/>
+            <rect x="70" y="44" width="820" height="7" fill="var(--copper)" opacity=".85"/>
+            <rect x="70" y="51" width="820" height="18" fill="var(--line)"/>
+            <rect x="70" y="69" width="820" height="7" fill="var(--copper)" opacity=".85"/>
+            <rect x="70" y="76" width="820" height="12" fill="var(--trace)"/>
+            <rect x="70" y="126" width="820" height="12" fill="var(--trace)"/>
+            <rect x="70" y="138" width="820" height="7" fill="var(--copper)" opacity=".85"/>
+            <rect x="70" y="145" width="820" height="18" fill="var(--line)"/>
+            <rect x="70" y="163" width="820" height="7" fill="var(--copper)" opacity=".85"/>
+            <rect x="70" y="170" width="820" height="12" fill="var(--trace)"/>
+            <rect x="70" y="182" width="820" height="9" fill="var(--copper)"/>
+            <rect x="70" y="191" width="820" height="5" fill="var(--green)" opacity=".75"/>
+          </g>
+          <rect x="70" y="88" width="820" height="38" fill="none" stroke="var(--line)" stroke-dasharray="5 6"/>
+          <text x="480" y="111" fill="var(--muted)" font-size="11" letter-spacing="2" text-anchor="middle">· · ·  L4 — L57 · 54 MORE COPPER LAYERS  · · ·</text>
+          <path d="M193 23 L207 23 L203 51 L197 51 Z" fill="var(--copper-2)"/>
+          <rect x="465" y="69" width="10" height="76" fill="var(--copper-2)"/>
+          <rect x="459" y="66" width="22" height="5" fill="var(--copper-2)"/>
+          <rect x="459" y="143" width="22" height="5" fill="var(--copper-2)"/>
+          <rect x="725" y="23" width="12" height="173" fill="var(--copper-2)" opacity=".9"/>
+          <rect x="718" y="20" width="26" height="6" fill="var(--copper-2)"/>
+          <rect x="718" y="193" width="26" height="6" fill="var(--copper-2)"/>
+          <g fill="var(--muted)" font-size="10.5">
+            <text x="216" y="14">μVIA L1→L2 · LASER ⌀0.10 MM</text>
+            <text x="488" y="85">BURIED VIA L3→L58</text>
+            <text x="748" y="212">PTH ⌀0.15 MM MIN</text>
+          </g>
+        </svg>
+        <ul class="stackup-legend">
+          <li><i class="sw sw-cu"></i>Copper layer</li>
+          <li><i class="sw sw-pp"></i>Prepreg</li>
+          <li><i class="sw sw-core"></i>Core</li>
+          <li><i class="sw sw-via"></i>Via structure</li>
+          <li><i class="sw sw-mask"></i>Solder mask</li>
+        </ul>
+      </div>
+
+      <p class="spec-note reveal">Quality system: ISO 9001:2015 &amp; AS9100D:2016 · IPC-certified technicians on every line.</p>
+
+      <figure class="band-photo reveal">
+        <img src="assets/xray-inspection.jpg" alt="Shimadzu X-ray inspection system on the Flashline EMS line">
+        <figcaption>SHIMADZU X-RAY INSPECTION — BGA VERIFICATION &amp; FAI IN-HOUSE</figcaption>
+      </figure>
+    </section>
+
+    <!-- ══════════ INDUSTRIES ══════════ -->
+    <section class="section" id="industries">
+      <div class="section-head reveal">
+        <span class="section-no">03</span>
+        <h2>Built for industries<br>where failure isn't an option.</h2>
+        <p>Six sectors, one common demand: boards that work the first time, every time.</p>
+      </div>
+
+      <div class="ind-grid">
+        <a class="ind reveal" href="#contact">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 15l-8-4V4.5a1.5 1.5 0 00-3 0V11l-8 4v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-4.5l8 2.5v-2z"/></svg>
+          <h3>Aerospace &amp; Defence</h3>
+          <p>AS9100D-aligned processes with full lot traceability for flight-critical hardware.</p>
+        </a>
+        <a class="ind reveal" href="#contact">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-4.6-9.5-9A5.5 5.5 0 0112 6.3 5.5 5.5 0 0121.5 12C19 16.4 12 21 12 21z" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M4 12h4l2-3 3 6 2-3h5" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+          <h3>Healthcare &amp; Medical</h3>
+          <p>Cleanliness, documentation, and repeatability for devices people depend on.</p>
+        </a>
+        <a class="ind reveal" href="#contact">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 20h20M4 20V9l8-5 8 5v11M9 20v-6h6v6" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+          <h3>IT &amp; Telecom</h3>
+          <p>High-layer-count, high-density boards for network and compute infrastructure.</p>
+        </a>
+        <a class="ind reveal" href="#contact">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 16l2-6a2 2 0 012-1.4h10A2 2 0 0119 10l2 6M5 16h14a1 1 0 011 1v2h-2.5a1.5 1.5 0 01-3 0h-5a1.5 1.5 0 01-3 0H4v-2a1 1 0 011-1z" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+          <h3>Automotive</h3>
+          <p>Vibration-hardened assemblies with conformal coating and environmental test.</p>
+        </a>
+        <a class="ind reveal" href="#contact">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 15V7a2 2 0 012-2h12a2 2 0 012 2v8M2 15h20l-2 4H4l-2-4z" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+          <h3>Transportation</h3>
+          <p>Long-lifecycle electronics for rail, fleet, and logistics platforms.</p>
+        </a>
+        <a class="ind reveal" href="#contact">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13 2L4 14h6l-1 8 9-12h-6l1-8z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+          <h3>Power &amp; Energy</h3>
+          <p>Metal-core and heavy-copper builds for high-current, high-heat applications.</p>
+        </a>
+      </div>
+    </section>
+
+    <!-- ══════════ PROCESS ══════════ -->
+    <section class="section section-alt" id="process">
+      <div class="section-head reveal">
+        <span class="section-no">04</span>
+        <h2>Industry 4.0,<br>on an actual factory floor.</h2>
+        <p>Every board is digitally tracked from kit to crate. You see what we see.</p>
+      </div>
+
+      <ol class="steps">
+        <li class="reveal"><b>01 — Quote &amp; DFM</b><p>Send your files; our CAM team returns a manufacturability review with the quote — before you commit.</p></li>
+        <li class="reveal"><b>02 — Sourcing</b><p>A global supply chain spanning Singapore, USA, Taiwan, Korea and China keeps components moving even when markets don't.</p></li>
+        <li class="reveal"><b>03 — First article</b><p>Every new part number passes FAI with X-ray and 3D optical inspection before volume begins.</p></li>
+        <li class="reveal"><b>04 — Production</b><p>Automated SMT lines with digital lot tracking — live status, full traceability, zero guesswork.</p></li>
+        <li class="reveal"><b>05 — Test &amp; ship</b><p>Functional, burn-in, and environmental testing, then box-build and packaging. Product ships market-ready.</p></li>
+      </ol>
+
+      <div class="lineflow reveal">
+        <div class="lineflow-head">
+          <h3>// SMT line — station flow</h3>
+          <span>DIGITAL LOT TRACKING AT EVERY STATION</span>
+        </div>
+        <svg viewBox="0 0 1180 168" role="img" aria-label="SMT production line stations from paste print to functional test">
+          <path d="M606 54 C 626 50, 638 26, 661 22 S 700 44, 716 54" fill="none" stroke="var(--copper)" stroke-width="2"/>
+          <circle cx="661" cy="22" r="3" fill="var(--copper)"/>
+          <text x="661" y="12" fill="var(--copper)" font-size="10" text-anchor="middle">245 °C PEAK</text>
+          <g fill="var(--panel)" stroke="var(--line)">
+            <rect x="20" y="60" width="122" height="44" rx="8"/>
+            <rect x="165" y="60" width="122" height="44" rx="8"/>
+            <rect x="310" y="60" width="122" height="44" rx="8"/>
+            <rect x="455" y="60" width="122" height="44" rx="8"/>
+            <rect x="600" y="60" width="122" height="44" rx="8" stroke="var(--copper)"/>
+            <rect x="745" y="60" width="122" height="44" rx="8"/>
+            <rect x="890" y="60" width="122" height="44" rx="8"/>
+            <rect x="1035" y="60" width="122" height="44" rx="8"/>
+          </g>
+          <g fill="var(--text)" font-size="10.5" text-anchor="middle">
+            <text x="81" y="86">PASTE PRINT</text>
+            <text x="226" y="86">SPI</text>
+            <text x="371" y="86">PICK &amp; PLACE 1</text>
+            <text x="516" y="86">PICK &amp; PLACE 2</text>
+            <text x="661" y="86">REFLOW · N₂</text>
+            <text x="806" y="86">3D AOI</text>
+            <text x="951" y="86">X-RAY</text>
+            <text x="1096" y="86">FCT / ICT</text>
+          </g>
+          <g stroke="var(--muted)" stroke-width="1.5">
+            <line x1="142" y1="82" x2="158" y2="82"/>
+            <line x1="287" y1="82" x2="303" y2="82"/>
+            <line x1="432" y1="82" x2="448" y2="82"/>
+            <line x1="577" y1="82" x2="593" y2="82"/>
+            <line x1="722" y1="82" x2="738" y2="82"/>
+            <line x1="867" y1="82" x2="883" y2="82"/>
+            <line x1="1012" y1="82" x2="1028" y2="82"/>
+          </g>
+          <g fill="var(--muted)">
+            <path d="M158 78 L165 82 L158 86 Z"/>
+            <path d="M303 78 L310 82 L303 86 Z"/>
+            <path d="M448 78 L455 82 L448 86 Z"/>
+            <path d="M593 78 L600 82 L593 86 Z"/>
+            <path d="M738 78 L745 82 L738 86 Z"/>
+            <path d="M883 78 L890 82 L883 86 Z"/>
+            <path d="M1028 78 L1035 82 L1028 86 Z"/>
+          </g>
+          <g stroke="var(--muted)" stroke-width="1" stroke-dasharray="3 4" opacity=".55">
+            <line x1="81" y1="104" x2="81" y2="132"/>
+            <line x1="226" y1="104" x2="226" y2="132"/>
+            <line x1="371" y1="104" x2="371" y2="132"/>
+            <line x1="516" y1="104" x2="516" y2="132"/>
+            <line x1="661" y1="104" x2="661" y2="132"/>
+            <line x1="806" y1="104" x2="806" y2="132"/>
+            <line x1="951" y1="104" x2="951" y2="132"/>
+            <line x1="1096" y1="104" x2="1096" y2="132"/>
+          </g>
+          <line x1="20" y1="132" x2="1157" y2="132" stroke="var(--line)" stroke-width="2"/>
+          <text x="1157" y="156" fill="var(--muted)" font-size="10" text-anchor="end">→ BOX-BUILD &amp; PACK</text>
+        </svg>
+      </div>
+
+    </section>
+
+    <!-- ══════════ VIRTUAL TOUR ══════════ -->
+    <section class="section" id="tour">
+      <div class="section-head reveal">
+        <span class="section-no">05</span>
+        <h2>Walk the floor,<br>from wherever you are.</h2>
+        <p>A full 3D scan of the facility — step through the SMT lines, inspection bays
+        and box-build area exactly as they stand today. No appointment needed.</p>
+      </div>
+
+      <div class="tour-frame reveal" id="tourFrame">
+        <button type="button" class="tour-launch" id="tourLaunch" aria-label="Launch the 3D virtual factory tour">
+          <span class="tour-ring"><svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></span>
+          <span class="tour-label">Launch 3D Factory Tour</span>
+          <span class="tour-sub">MATTERPORT · INTERACTIVE WALKTHROUGH</span>
+        </button>
+      </div>
+      <p class="tour-note reveal">Drag to look around, click the floor to walk — use the ⛶ button to go fullscreen.
+      Prefer an in-person visit? <a href="mailto:sales@flashlineems.com?subject=Factory%20Tour%20Request">Book a tour →</a></p>
+    </section>
+
+    <!-- ══════════ ABOUT / COMPANY ══════════ -->
+    <section class="section section-alt" id="about">
+      <div class="section-head reveal">
+        <span class="section-no">06</span>
+        <h2>Founded by people who<br>have built boards for 40 years.</h2>
+        <p>Flashline EMS was founded by PCB industry pioneers with four decades of
+        manufacturing behind them. That experience shows up in the details — a 100,000+ sq ft
+        plant, 40+ qualified engineers, and a supply chain with reach into five countries.</p>
+      </div>
+
+      <figure class="band-photo reveal">
+        <img src="assets/factory-drone.jpg" alt="Aerial view of the Flashline EMS manufacturing facility">
+        <figcaption>THE FLASHLINE EMS FACILITY — E-CITY, HYDERABAD</figcaption>
+      </figure>
+
+      <div class="about-grid">
+        <div class="about-block reveal">
+          <h3>Global footprint</h3>
+          <ul class="loc-list">
+            <li><b>India</b><span>Headquarters &amp; manufacturing</span></li>
+            <li><b>Singapore</b><span>Supply chain office</span></li>
+            <li><b>USA</b><span>Supply chain office</span></li>
+            <li><b>Taiwan</b><span>Supply chain office</span></li>
+            <li><b>Korea</b><span>Supply chain office</span></li>
+            <li><b>China</b><span>Supply chain office</span></li>
+          </ul>
+        </div>
+        <div class="about-block reveal">
+          <h3>Why teams choose us</h3>
+          <ul class="why-list">
+            <li>One roof from design to box-build — no hand-off risk between vendors.</li>
+            <li>Industry 4.0 digital tracking on every lot.</li>
+            <li>IPC-certified technicians and ISO-driven quality processes.</li>
+            <li>First-article inspection as standard, not an upsell.</li>
+            <li>Prototype-friendly: the same line quality at any volume.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════ CONTACT ══════════ -->
+    <section class="section section-contact" id="contact">
+      <div class="section-head reveal">
+        <span class="section-no">07</span>
+        <h2>Have a board to build?</h2>
+        <p>Tell us about your project — we'll come back with a DFM review and a quote.
+        You can email Gerbers and BOM once we reply.</p>
+      </div>
+
+      <div class="contact-grid">
+        <form class="contact-form reveal" id="contactForm" action="https://formsubmit.co/sales@flashlineems.com" method="POST" novalidate>
+          <input type="hidden" name="_subject" value="Business enquiry — flashlineems.com">
+          <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+          <div class="ff-row">
+            <label class="ff">
+              <span>Name *</span>
+              <input type="text" name="name" required autocomplete="name" placeholder="Your name">
+            </label>
+            <label class="ff">
+              <span>Company *</span>
+              <input type="text" name="company" required autocomplete="organization" placeholder="Company name">
+            </label>
+          </div>
+
+          <div class="ff-row">
+            <label class="ff">
+              <span>Business email *</span>
+              <input type="email" name="email" required autocomplete="email" placeholder="you@company.com">
+            </label>
+            <label class="ff">
+              <span>Phone</span>
+              <input type="tel" name="phone" autocomplete="tel" placeholder="+91 …">
+            </label>
+          </div>
+
+          <div class="ff-row">
+            <label class="ff">
+              <span>Enquiry type *</span>
+              <select name="enquiry_type" required>
+                <option value="" disabled selected>Select…</option>
+                <option>PCB Assembly</option>
+                <option>PCB Fabrication</option>
+                <option>Box Build / Turnkey</option>
+                <option>Engineering Design / DFM</option>
+                <option>Factory tour / Meeting</option>
+                <option>Other</option>
+              </select>
+            </label>
+            <label class="ff">
+              <span>Estimated volume</span>
+              <select name="estimated_volume">
+                <option value="" selected>Not sure yet</option>
+                <option>Prototype (&lt; 50)</option>
+                <option>50 – 1,000</option>
+                <option>1,000 – 10,000</option>
+                <option>10,000+</option>
+              </select>
+            </label>
+          </div>
+
+          <label class="ff">
+            <span>Project details *</span>
+            <textarea name="message" rows="5" required placeholder="Board type, layer count, quantities, timeline — whatever you have."></textarea>
+          </label>
+
+          <button type="submit" class="btn btn-solid" id="contactSubmit">Send Enquiry</button>
+          <p class="form-status" id="formStatus" role="status"></p>
+        </form>
+
+        <aside class="contact-aside reveal">
+          <h3>Direct lines</h3>
+          <a class="contact-link" href="mailto:sales@flashlineems.com">sales@flashlineems.com</a>
+          <a class="contact-link" href="tel:+918121020371">+91 81210 20371</a>
+
+          <h3>Visit us</h3>
+          <p class="addr">Flashline EMS Private Limited<br>
+          Sy No 78 &amp; 81, Plot S58–S59, E-City,<br>
+          Raviryala, Maheswaram Industrial Area,<br>
+          Rangareddy — 501359, Telangana, India</p>
+
+          <p class="aside-links">
+            <a href="#tour">Take the 3D virtual tour →</a>
+            <a href="#event">Meet us at electronica India 2026 →</a>
+          </p>
+        </aside>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ══════════ FOOTER ══════════ -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <span class="rail-logo-text">FLASHLINE<em>EMS</em></span>
+        <p>PCB fabrication to box build — turnkey electronics manufacturing services.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer">
+        <div>
+          <h4>Services</h4>
+          <a href="#services">Engineering Design</a>
+          <a href="#services">PCB Fabrication</a>
+          <a href="#services">PCB Assembly</a>
+          <a href="#services">Box Build</a>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <a href="#about">About</a>
+          <a href="#capabilities">Capabilities</a>
+          <a href="#process">Process</a>
+          <a href="#tour">Virtual tour</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div>
+          <h4>Reach us</h4>
+          <a href="mailto:sales@flashlineems.com">sales@flashlineems.com</a>
+          <a href="tel:+918121020371">+91 81210 20371</a>
+        </div>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year">2026</span> Flashline EMS. All rights reserved.</span>
+      <span class="footer-cert">ISO 9001:2015 · AS9100D:2016 (under process) · IPC</span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
