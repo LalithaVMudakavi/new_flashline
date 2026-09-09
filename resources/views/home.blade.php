@@ -69,7 +69,10 @@
         </div>
       </div>
       <figure class="event-photo">
-        <img src="assets/event-booth.jpg" alt="Flashline EMS exhibition booth — from concept to production">
+        <img 
+    src="{{ asset('assets/event-booth.jpg') }}" 
+    alt="Flashline EMS exhibition booth — from concept to production"
+>
         <figcaption>OUR BOOTH — HALL 4 · H4.F122 · BIEC</figcaption>
       </figure>
     </aside>

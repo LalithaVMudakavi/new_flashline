@@ -7,17 +7,5 @@
 
     encode gzip zstd
 
-    # Serve existing static files directly
-    @static {
-        file
-    }
-
-    handle @static {
-        file_server
-    }
-
-    # Everything else goes to Laravel
-    handle {
-        php_server
-    }
+    php_server
 }
