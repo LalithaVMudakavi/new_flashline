@@ -129,13 +129,10 @@ document.addEventListener('DOMContentLoaded', function () {
         iframe.style.border = '0';
 
 
-        // Remove launch button
         tourFrame.innerHTML = '';
 
-        // Add Matterport tour
         tourFrame.appendChild(iframe);
 
-        // Add active class
         tourFrame.classList.add('tour-active');
 
     });
