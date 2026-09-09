@@ -207,7 +207,6 @@
         </form>
 
 
-        <!-- CONTACT INFORMATION -->
         <aside class="contact-aside reveal">
 
             <div class="contact-info-block">
