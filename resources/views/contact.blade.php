@@ -171,8 +171,6 @@
 
             </div>
 
-
-            <!-- PROJECT DETAILS -->
             <label class="ff ff-full">
 
                 <span>Project details *</span>
@@ -205,6 +203,7 @@
             ></p>
 
         </form>
+
 
 
         <aside class="contact-aside reveal">
