@@ -6,7 +6,7 @@
 
 <!-- ══════════ CONTACT ══════════ -->
 
-<section class="section section-contact" id="contact">
+<section class="section" id="contact">
 
   <div class="section-head reveal">
     <span class="section-no">07</span>
