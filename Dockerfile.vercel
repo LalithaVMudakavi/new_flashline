@@ -26,6 +26,13 @@ FROM dunglas/frankenphp:php8.3-bookworm
 WORKDIR /app
 
 
+# Install required system packages
+RUN apt-get update && apt-get install -y \
+    unzip \
+    git \
+    && rm -rf /var/lib/apt/lists/*
+
+
 # Install Composer
 COPY --from=composer:2 /usr/bin/composer /usr/bin/composer
 
@@ -73,7 +80,7 @@ ENV CACHE_STORE=file
 ENV QUEUE_CONNECTION=sync
 
 
-# Tell FrankenPHP to serve Laravel's public directory
+# Server configuration
 ENV SERVER_NAME=:80
 ENV SERVER_ROOT=/app/public
 
