@@ -8,225 +8,265 @@
 
 <section class="section section-contact" id="contact">
 
-  <div class="section-head reveal">
-    <span class="section-no">07</span>
+    <!-- SECTION HEADER -->
+    <div class="section-head reveal">
+
+        <span class="section-no">07</span>
+
+        <h2>
+            Have a board to build?
+        </h2>
+
+        <p>
+            Tell us about your project — we'll come back with a DFM review
+            and a quote. You can email Gerbers and BOM once we reply.
+        </p>
+
+    </div>
 
 
-<h2>Have a board to build?</h2>
+    <!-- CONTACT CONTENT -->
+    <div class="contact-grid">
 
-<p>
-  Tell us about your project — we'll come back with a DFM review and a quote.
-  You can email Gerbers and BOM once we reply.
-</p>
+        <!-- CONTACT FORM -->
+        <form
+            class="contact-form reveal"
+            id="contactForm"
+            action="https://formsubmit.co/sales@flashlineems.com"
+            method="POST"
+            novalidate
+        >
 
+            <input
+                type="hidden"
+                name="_subject"
+                value="Business enquiry — flashlineems.com"
+            >
 
-  </div>
-
-  <div class="contact-grid">
-
-
-<!-- CONTACT FORM -->
-<form
-  class="contact-form reveal"
-  id="contactForm"
-  action="https://formsubmit.co/sales@flashlineems.com"
-  method="POST"
-  novalidate
->
-
-  <input
-    type="hidden"
-    name="_subject"
-    value="Business enquiry — flashlineems.com"
-  >
-
-  <input
-    type="text"
-    name="_honey"
-    class="hp"
-    tabindex="-1"
-    autocomplete="off"
-    aria-hidden="true"
-  >
+            <!-- Honeypot -->
+            <input
+                type="text"
+                name="_honey"
+                class="hp"
+                tabindex="-1"
+                autocomplete="off"
+                aria-hidden="true"
+            >
 
 
-  <!-- NAME + COMPANY -->
-  <div class="ff-row">
+            <!-- NAME + COMPANY -->
+            <div class="ff-row">
 
-    <label class="ff">
-      <span>Name *</span>
+                <label class="ff">
 
-      <input
-        type="text"
-        name="name"
-        required
-        autocomplete="name"
-        placeholder="Your name"
-      >
-    </label>
+                    <span>Name *</span>
 
+                    <input
+                        type="text"
+                        name="name"
+                        required
+                        autocomplete="name"
+                        placeholder="Your name"
+                    >
 
-    <label class="ff">
-      <span>Company *</span>
-
-      <input
-        type="text"
-        name="company"
-        required
-        autocomplete="organization"
-        placeholder="Company name"
-      >
-    </label>
-
-  </div>
+                </label>
 
 
-  <!-- EMAIL + PHONE -->
-  <div class="ff-row">
+                <label class="ff">
 
-    <label class="ff">
-      <span>Business email *</span>
+                    <span>Company *</span>
 
-      <input
-        type="email"
-        name="email"
-        required
-        autocomplete="email"
-        placeholder="you@company.com"
-      >
-    </label>
+                    <input
+                        type="text"
+                        name="company"
+                        required
+                        autocomplete="organization"
+                        placeholder="Company name"
+                    >
 
+                </label>
 
-    <label class="ff">
-      <span>Phone</span>
-
-      <input
-        type="tel"
-        name="phone"
-        autocomplete="tel"
-        placeholder="+91 …"
-      >
-    </label>
-
-  </div>
+            </div>
 
 
-  <!-- ENQUIRY TYPE + VOLUME -->
-  <div class="ff-row">
+            <!-- EMAIL + PHONE -->
+            <div class="ff-row">
 
-    <label class="ff">
-      <span>Enquiry type *</span>
+                <label class="ff">
 
-      <select name="enquiry_type" required>
-        <option value="" disabled selected>Select…</option>
+                    <span>Business email *</span>
 
-        <option>PCB Assembly</option>
-        <option>PCB Fabrication</option>
-        <option>Box Build / Turnkey</option>
-        <option>Engineering Design / DFM</option>
-        <option>Factory tour / Meeting</option>
-        <option>Other</option>
-      </select>
-    </label>
+                    <input
+                        type="email"
+                        name="email"
+                        required
+                        autocomplete="email"
+                        placeholder="you@company.com"
+                    >
 
-
-    <label class="ff">
-      <span>Estimated volume</span>
-
-      <select name="estimated_volume">
-        <option value="" selected>Not sure yet</option>
-
-        <option>Prototype (&lt; 50)</option>
-        <option>50 – 1,000</option>
-        <option>1,000 – 10,000</option>
-        <option>10,000+</option>
-      </select>
-    </label>
-
-  </div>
+                </label>
 
 
-  <!-- PROJECT DETAILS -->
-  <label class="ff">
+                <label class="ff">
 
-    <span>Project details *</span>
+                    <span>Phone</span>
 
-    <textarea
-      name="message"
-      rows="5"
-      required
-      placeholder="Board type, layer count, quantities, timeline — whatever you have."
-    ></textarea>
+                    <input
+                        type="tel"
+                        name="phone"
+                        autocomplete="tel"
+                        placeholder="+91 ..."
+                    >
 
-  </label>
+                </label>
 
-
-  <!-- SUBMIT BUTTON -->
-  <button
-    type="submit"
-    class="btn btn-solid"
-    id="contactSubmit"
-  >
-    Send Enquiry
-  </button>
+            </div>
 
 
-  <!-- FORM STATUS -->
-  <p
-    class="form-status"
-    id="formStatus"
-    role="status"
-  ></p>
+            <!-- ENQUIRY TYPE + VOLUME -->
+            <div class="ff-row">
 
-</form>
+                <label class="ff">
 
+                    <span>Enquiry type *</span>
 
-<!-- CONTACT INFORMATION -->
-<aside class="contact-aside reveal">
+                    <select
+                        name="enquiry_type"
+                        required
+                    >
+                        <option value="" disabled selected>
+                            Select...
+                        </option>
 
-  <h3>Direct lines</h3>
+                        <option>PCB Assembly</option>
+                        <option>PCB Fabrication</option>
+                        <option>Box Build / Turnkey</option>
+                        <option>Engineering Design / DFM</option>
+                        <option>Factory tour / Meeting</option>
+                        <option>Other</option>
 
-  <a
-    class="contact-link"
-    href="mailto:sales@flashlineems.com"
-  >
-    sales@flashlineems.com
-  </a>
+                    </select>
 
-  <a
-    class="contact-link"
-    href="tel:+918121020371"
-  >
-    +91 81210 20371
-  </a>
+                </label>
 
 
-  <h3>Visit us</h3>
+                <label class="ff">
 
-  <p class="addr">
-    Flashline EMS Private Limited<br>
-    Sy No 78 &amp; 81, Plot S58–S59, E-City,<br>
-    Raviryala, Maheswaram Industrial Area,<br>
-    Rangareddy — 501359, Telangana, India
-  </p>
+                    <span>Estimated volume</span>
 
+                    <select name="estimated_volume">
 
-  <p class="aside-links">
+                        <option value="" selected>
+                            Not sure yet
+                        </option>
 
-    <a href="{{ route('tour') }}">
-      Take the 3D virtual tour →
-    </a>
+                        <option>Prototype (&lt; 50)</option>
+                        <option>50 – 1,000</option>
+                        <option>1,000 – 10,000</option>
+                        <option>10,000+</option>
 
-    <a href="{{ url('/') }}#event">
-      Meet us at electronica India 2026 →
-    </a>
+                    </select>
 
-  </p>
+                </label>
 
-</aside>
+            </div>
 
 
-  </div>
+            <!-- PROJECT DETAILS -->
+            <label class="ff ff-full">
+
+                <span>Project details *</span>
+
+                <textarea
+                    name="message"
+                    rows="5"
+                    required
+                    placeholder="Board type, layer count, quantities, timeline — whatever you have."
+                ></textarea>
+
+            </label>
+
+
+            <!-- SUBMIT -->
+            <button
+                type="submit"
+                class="btn btn-solid"
+                id="contactSubmit"
+            >
+                Send Enquiry
+            </button>
+
+
+            <!-- FORM STATUS -->
+            <p
+                class="form-status"
+                id="formStatus"
+                role="status"
+            ></p>
+
+        </form>
+
+
+        <!-- CONTACT INFORMATION -->
+        <aside class="contact-aside reveal">
+
+            <div class="contact-info-block">
+
+                <h3>Direct lines</h3>
+
+                <a
+                    class="contact-link"
+                    href="mailto:sales@flashlineems.com"
+                >
+                    sales@flashlineems.com
+                </a>
+
+                <a
+                    class="contact-link"
+                    href="tel:+918121020371"
+                >
+                    +91 81210 20371
+                </a>
+
+            </div>
+
+
+            <div class="contact-info-block">
+
+                <h3>Visit us</h3>
+
+                <p class="addr">
+
+                    Flashline EMS Private Limited<br>
+
+                    Sy No 78 &amp; 81, Plot S58–S59, E-City,<br>
+
+                    Raviryala, Maheswaram Industrial Area,<br>
+
+                    Rangareddy — 501359,<br>
+
+                    Telangana, India
+
+                </p>
+
+            </div>
+
+
+            <div class="aside-links">
+
+                <a href="{{ route('tour') }}">
+                    Take the 3D virtual tour →
+                </a>
+
+                <a href="{{ url('/') }}#event">
+                    Meet us at electronica India 2026 →
+                </a>
+
+            </div>
+
+        </aside>
+
+    </div>
 
 </section>
 
