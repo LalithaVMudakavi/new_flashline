@@ -1,11 +1,48 @@
+# Git
 .git
-.github
+.gitignore
+
+# Environment files
 .env
 .env.*
+!.env.example
+
+# Node dependencies
 node_modules
+
+# PHP dependencies
 vendor
+
+# Laravel generated files
+bootstrap/cache/*.php
+
+storage/framework/cache/*
+storage/framework/sessions/*
+storage/framework/views/*
 storage/logs/*
-npm-debug.log
-Dockerfile
-README.md
-tests
+
+# Local SQLite database
+database/*.sqlite
+
+# Vite production build
+# Docker builds this itself
+public/build
+
+# IDE files
+.vscode
+.idea
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Testing
+coverage
+.phpunit.result.cache
+
+# Docker Compose
+docker-compose.yml
+docker-compose.yaml

@@ -25,7 +25,7 @@
         )"
     >
 
-    <!-- Fonts -->
+    <!-- Google Fonts -->
 
     <link
         rel="preconnect"
@@ -50,7 +50,7 @@
         href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23f7f5f1'/><path d='M8 22 L14 10 L18 10 L24 10 L18 22 Z' fill='%23c96a1e'/></svg>"
     >
 
-    <!-- Laravel Vite -->
+    <!-- Vite CSS + JavaScript -->
 
     @vite([
         'resources/css/app.css',

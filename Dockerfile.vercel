@@ -1,3 +1,29 @@
+# ==========================================
+# Stage 1: Build Vite frontend assets
+# ==========================================
+
+FROM node:20-bookworm AS frontend
+
+WORKDIR /app
+
+# Copy package files first for better Docker caching
+COPY package.json package-lock.json ./
+
+# Install Node dependencies
+RUN npm ci
+
+# Copy frontend source files
+COPY resources ./resources
+COPY vite.config.js ./
+
+# Build production Vite assets
+RUN npm run build
+
+
+# ==========================================
+# Stage 2: Laravel + FrankenPHP
+# ==========================================
+
 FROM dunglas/frankenphp:php8.3-bookworm
 
 WORKDIR /app
@@ -39,11 +65,18 @@ RUN composer install \
 
 
 # ==========================================
-# Create Laravel required directories
+# Copy Vite production build
+# ==========================================
+
+COPY --from=frontend /app/public/build ./public/build
+
+
+# ==========================================
+# Laravel storage directories
 # ==========================================
 
 RUN mkdir -p \
-    storage/framework/cache \
+    storage/framework/cache/data \
     storage/framework/sessions \
     storage/framework/views \
     storage/logs \
@@ -54,18 +87,13 @@ RUN mkdir -p \
 # Permissions
 # ==========================================
 
-RUN chmod -R 775 storage bootstrap/cache
+RUN chmod -R 775 \
+    storage \
+    bootstrap/cache
 
 
 # ==========================================
-# Production PHP configuration
-# ==========================================
-
-RUN cp $PHP_INI_DIR/php.ini-production $PHP_INI_DIR/php.ini
-
-
-# ==========================================
-# Laravel production environment
+# Production environment
 # ==========================================
 
 ENV APP_ENV=production
@@ -79,7 +107,7 @@ ENV QUEUE_CONNECTION=sync
 
 
 # ==========================================
-# Expose HTTP port
+# Vercel / FrankenPHP port
 # ==========================================
 
 EXPOSE 80
