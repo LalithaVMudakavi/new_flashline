@@ -1,61 +1,56 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
+    <meta charset="UTF-8">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>@yield('title', 'Flashline EMS — Electronics Manufacturing Services | PCB Fabrication to Box Build')</title>
+    <title>
+        @yield('title', 'Flashline EMS — Electronics Manufacturing Services | PCB Fabrication to Box Build')
+    </title>
 
-<meta
-name="description"
-content="@yield('description', 'Flashline EMS is a turnkey electronics manufacturing partner — PCB design, fabrication up to 60-layer HDI, SMT assembly down to 01005, and complete box-build. 100,000+ sq ft facility, ISO 9001 & AS9100D processes.')"
+    <meta
+        name="description"
+        content="@yield('description', 'Flashline EMS is a turnkey electronics manufacturing partner — PCB design, fabrication up to 60-layer HDI, SMT assembly down to 01005, and complete box-build. 100,000+ sq ft facility, ISO 9001 & AS9100D processes.')"
+    >
 
->
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 
-  <!-- ORIGINAL FONTS — KEEP EXACTLY -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet"
+    >
 
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 
-  <link
-    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600&display=swap"
-    rel="stylesheet"
-  >
+    <!-- Favicon -->
+    <link
+        rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23f7f5f1'/><path d='M8 22 L14 10 L18 10 L12 22 Z M15 22 L21 10 L24 10 L18 22 Z' fill='%23c96a1e'/></svg>"
+    >
 
-  <!-- ORIGINAL CSS -->
-
-  <link rel="stylesheet" href="{{ asset('css/style.css') }}">
-
-  <!-- ORIGINAL FAVICON -->
-
-  <link
-    rel="icon"
-    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23f7f5f1'/><path d='M8 22 L14 10 L18 10 L12 22 Z M15 22 L21 10 L24 10 L18 22 Z' fill='%23c96a1e'/></svg>"
-  >
-
-@stack('styles')
-
+    @stack('styles')
 </head>
 
 <body>
 
-@include('layouts.navbar')
+    @include('layouts.navbar')
 
-  <main id="top">
-    @yield('content')
-  </main>
+    <main id="top">
+        @yield('content')
+    </main>
 
-@include('layouts.footer')
+    @include('layouts.footer')
 
-  <!-- ORIGINAL JAVASCRIPT -->
+    <!-- Main JavaScript -->
+    <script src="{{ asset('js/main.js') }}"></script>
 
-  <script src="{{ asset('js/main.js') }}"></script>
-
-@stack('scripts')
+    @stack('scripts')
 
 </body>
 
