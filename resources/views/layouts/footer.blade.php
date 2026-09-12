@@ -19,7 +19,7 @@
                 manufacturing services.
             </p>
 
-           <!-- SOCIAL MEDIA -->
+  
 
 <div class="footer-social">
 
