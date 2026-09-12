@@ -19,44 +19,35 @@
                 manufacturing services.
             </p>
 
-            <!-- SOCIAL MEDIA -->
+           <!-- SOCIAL MEDIA -->
 
-            <div class="footer-social">
+<div class="footer-social">
 
-                <a
-                    href="YOUR_INSTAGRAM_URL"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="footer-social-link"
-                    aria-label="Instagram"
-                    title="Instagram"
-                >
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
+    <span
+        class="footer-social-link"
+        aria-label="Instagram"
+        title="Instagram"
+    >
+        <i class="fa-brands fa-instagram"></i>
+    </span>
 
-                <a
-                    href="YOUR_YOUTUBE_URL"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="footer-social-link"
-                    aria-label="YouTube"
-                    title="YouTube"
-                >
-                    <i class="fa-brands fa-youtube"></i>
-                </a>
+    <span
+        class="footer-social-link"
+        aria-label="YouTube"
+        title="YouTube"
+    >
+        <i class="fa-brands fa-youtube"></i>
+    </span>
 
-                <a
-                    href="YOUR_LINKEDIN_URL"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="footer-social-link"
-                    aria-label="LinkedIn"
-                    title="LinkedIn"
-                >
-                    <i class="fa-brands fa-linkedin-in"></i>
-                </a>
+    <span
+        class="footer-social-link"
+        aria-label="LinkedIn"
+        title="LinkedIn"
+    >
+        <i class="fa-brands fa-linkedin-in"></i>
+    </span>
 
-            </div>
+</div>
 
         </div>
 
