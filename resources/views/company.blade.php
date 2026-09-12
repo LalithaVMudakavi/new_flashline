@@ -9,7 +9,7 @@
 <section class="section section-alt" id="about">
 
   <div class="section-head reveal">
-    <span class="section-no">06</span>
+    <span class="section-no">01</span>
 
 
 <h2>Founded by people who<br>have built boards for 40 years.</h2>
@@ -25,7 +25,7 @@
 
   <figure class="band-photo reveal">
     <img
-      src="{{ asset('assets/factory-drone.jpg') }}"
+      src="{{ asset('assets/company.png') }}"
       alt="Aerial view of the Flashline EMS manufacturing facility"
     >
 

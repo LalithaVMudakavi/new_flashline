@@ -11,7 +11,7 @@
   <div class="section-head reveal">
     <span class="section-no">04</span>
     <h2>Industry 4.0,<br>on an actual factory floor.</h2>
-    <p>Every board is digitally tracked from kit to crate. You see what we see.</p>
+    <p>Every board is digitally tracked from kit to crate.</p>
   </div>
 
   <ol class="steps">
@@ -28,12 +28,12 @@
 
 <li class="reveal">
   <b>03 — First article</b>
-  <p>Every new part number passes FAI with X-ray and 3D optical inspection before volume begins.</p>
+  <p> Every Part passes FAI with X-ray and 3D optical inspection before volume begins.</p>
 </li>
 
 <li class="reveal">
   <b>04 — Production</b>
-  <p>Automated SMT lines with digital lot tracking — live status, full traceability, zero guesswork.</p>
+  <p>Automated SMT lines with digital lot tracking — full traceability, zero guesswork.</p>
 </li>
 
 <li class="reveal">
@@ -47,188 +47,111 @@
   <!-- ══════════ SMT LINE FLOW ══════════ -->
 
   <div class="lineflow reveal">
-
-
-<div class="lineflow-head">
-  <h3>// SMT line — station flow</h3>
-  <span>DIGITAL LOT TRACKING AT EVERY STATION</span>
-</div>
-
-<svg
-  viewBox="0 0 1180 168"
-  role="img"
-  aria-label="SMT production line stations from paste print to functional test"
->
-
-  <path
-    d="M606 54 C 626 50, 638 26, 661 22 S 700 44, 716 54"
-    fill="none"
-    stroke="var(--copper)"
-    stroke-width="2"
-  />
-
-  <circle cx="661" cy="22" r="3" fill="var(--copper)"/>
-
-  <text
-    x="661"
-    y="12"
-    fill="var(--copper)"
-    font-size="10"
-    text-anchor="middle"
-  >
-    245 °C PEAK
-  </text>
-
-
-  <!-- Station boxes -->
-  <g fill="var(--panel)" stroke="var(--line)">
-
-    <rect x="20" y="60" width="122" height="44" rx="8"/>
-
-    <rect x="165" y="60" width="122" height="44" rx="8"/>
-
-    <rect x="310" y="60" width="122" height="44" rx="8"/>
-
-    <rect x="455" y="60" width="122" height="44" rx="8"/>
-
-    <rect
-      x="600"
-      y="60"
-      width="122"
-      height="44"
-      rx="8"
-      stroke="var(--copper)"
-    />
-
-    <rect x="745" y="60" width="122" height="44" rx="8"/>
-
-    <rect x="890" y="60" width="122" height="44" rx="8"/>
-
-    <rect x="1035" y="60" width="122" height="44" rx="8"/>
-
-  </g>
-
-
-  <!-- Station names -->
-  <g
-    fill="var(--text)"
-    font-size="10.5"
-    text-anchor="middle"
-  >
-
-    <text x="81" y="86">PASTE PRINT</text>
-
-    <text x="226" y="86">SPI</text>
-
-    <text x="371" y="86">PICK &amp; PLACE 1</text>
-
-    <text x="516" y="86">PICK &amp; PLACE 2</text>
-
-    <text x="661" y="86">REFLOW · N₂</text>
-
-    <text x="806" y="86">3D AOI</text>
-
-    <text x="951" y="86">X-RAY</text>
-
-    <text x="1096" y="86">FCT / ICT</text>
-
-  </g>
-
-
-  <!-- Connecting lines -->
-  <g
-    stroke="var(--muted)"
-    stroke-width="1.5"
-  >
-
-    <line x1="142" y1="82" x2="158" y2="82"/>
-
-    <line x1="287" y1="82" x2="303" y2="82"/>
-
-    <line x1="432" y1="82" x2="448" y2="82"/>
-
-    <line x1="577" y1="82" x2="593" y2="82"/>
-
-    <line x1="722" y1="82" x2="738" y2="82"/>
-
-    <line x1="867" y1="82" x2="883" y2="82"/>
-
-    <line x1="1012" y1="82" x2="1028" y2="82"/>
-
-  </g>
-
-
-  <!-- Arrows -->
-  <g fill="var(--muted)">
-
-    <path d="M158 78 L165 82 L158 86 Z"/>
-
-    <path d="M303 78 L310 82 L303 86 Z"/>
-
-    <path d="M448 78 L455 82 L448 86 Z"/>
-
-    <path d="M593 78 L600 82 L593 86 Z"/>
-
-    <path d="M738 78 L745 82 L738 86 Z"/>
-
-    <path d="M883 78 L890 82 L883 86 Z"/>
-
-    <path d="M1028 78 L1035 82 L1028 86 Z"/>
-
-  </g>
-
-
-  <!-- Digital tracking lines -->
-  <g
-    stroke="var(--muted)"
-    stroke-width="1"
-    stroke-dasharray="3 4"
-    opacity=".55"
-  >
-
-    <line x1="81" y1="104" x2="81" y2="132"/>
-
-    <line x1="226" y1="104" x2="226" y2="132"/>
-
-    <line x1="371" y1="104" x2="371" y2="132"/>
-
-    <line x1="516" y1="104" x2="516" y2="132"/>
-
-    <line x1="661" y1="104" x2="661" y2="132"/>
-
-    <line x1="806" y1="104" x2="806" y2="132"/>
-
-    <line x1="951" y1="104" x2="951" y2="132"/>
-
-    <line x1="1096" y1="104" x2="1096" y2="132"/>
-
-  </g>
-
-
-  <!-- Bottom production line -->
-  <line
-    x1="20"
-    y1="132"
-    x2="1157"
-    y2="132"
-    stroke="var(--line)"
-    stroke-width="2"
-  />
-
-
-  <text
-    x="1157"
-    y="156"
-    fill="var(--muted)"
-    font-size="10"
-    text-anchor="end"
-  >
-    → BOX-BUILD &amp; PACK
-  </text>
-
-</svg>
-
-
+    <div class="lineflow-head">
+      <h3>// SMT line — station flow</h3>
+    </div>
+
+    <svg
+      viewBox="0 0 1180 355"
+      role="img"
+      aria-label="Two SMT production lines followed by offline process stations"
+    >
+      <g fill="var(--panel)" stroke="var(--line)">
+        <rect x="20" y="28" width="122" height="48" rx="8"/>
+        <rect x="165" y="28" width="122" height="48" rx="8"/>
+        <rect x="310" y="28" width="122" height="48" rx="8"/>
+        <rect x="455" y="28" width="122" height="48" rx="8"/>
+        <rect x="600" y="28" width="122" height="48" rx="8"/>
+        <rect x="745" y="28" width="122" height="48" rx="8" stroke="var(--copper)"/>
+        <rect x="890" y="28" width="122" height="48" rx="8"/>
+        <rect x="1035" y="28" width="122" height="48" rx="8"/>
+
+        <rect x="20" y="112" width="122" height="48" rx="8"/>
+        <rect x="165" y="112" width="122" height="48" rx="8"/>
+        <rect x="310" y="112" width="122" height="48" rx="8"/>
+        <rect x="455" y="112" width="122" height="48" rx="8"/>
+        <rect x="600" y="112" width="122" height="48" rx="8"/>
+        <rect x="745" y="112" width="122" height="48" rx="8" stroke="var(--copper)"/>
+        <rect x="890" y="112" width="122" height="48" rx="8"/>
+        <rect x="1035" y="112" width="122" height="48" rx="8"/>
+      </g>
+
+      <g fill="var(--text)" font-size="10.5" text-anchor="middle">
+        <text x="81" y="51"><tspan x="81">AUTO</tspan><tspan x="81" dy="13">LOADER</tspan></text>
+        <text x="226" y="51"><tspan x="226">PASTE</tspan><tspan x="226" dy="13">PRINT</tspan></text>
+        <text x="371" y="57">SPI</text>
+        <text x="516" y="57">PICK &amp; PLACE 1</text>
+        <text x="661" y="57">PICK &amp; PLACE 2</text>
+        <text x="806" y="57">REFLOW · N₂</text>
+        <text x="951" y="57">3D AOI</text>
+        <text x="1096" y="51"><tspan x="1096">AUTO</tspan><tspan x="1096" dy="13">UNLOADER</tspan></text>
+
+        <text x="81" y="135"><tspan x="81">AUTO</tspan><tspan x="81" dy="13">LOADER</tspan></text>
+        <text x="226" y="135"><tspan x="226">PASTE</tspan><tspan x="226" dy="13">PRINT</tspan></text>
+        <text x="371" y="141">SPI</text>
+        <text x="516" y="141">PICK &amp; PLACE 1</text>
+        <text x="661" y="141">PICK &amp; PLACE 2</text>
+        <text x="806" y="141">REFLOW · N₂</text>
+        <text x="951" y="141">3D AOI</text>
+        <text x="1096" y="135"><tspan x="1096">AUTO</tspan><tspan x="1096" dy="13">UNLOADER</tspan></text>
+      </g>
+
+      <g stroke="var(--muted)" stroke-width="1.5" fill="var(--muted)">
+        <path d="M142 52 H158 L158 48 L165 52 L158 56 L158 52"/>
+        <path d="M287 52 H303 L303 48 L310 52 L303 56 L303 52"/>
+        <path d="M432 52 H448 L448 48 L455 52 L448 56 L448 52"/>
+        <path d="M577 52 H593 L593 48 L600 52 L593 56 L593 52"/>
+        <path d="M722 52 H738 L738 48 L745 52 L738 56 L738 52"/>
+        <path d="M867 52 H883 L883 48 L890 52 L883 56 L883 52"/>
+        <path d="M1012 52 H1028 L1028 48 L1035 52 L1028 56 L1028 52"/>
+
+        <path d="M142 136 H158 L158 132 L165 136 L158 140 L158 136"/>
+        <path d="M287 136 H303 L303 132 L310 136 L303 140 L303 136"/>
+        <path d="M432 136 H448 L448 132 L455 136 L448 140 L448 136"/>
+        <path d="M577 136 H593 L593 132 L600 136 L593 140 L593 136"/>
+        <path d="M722 136 H738 L738 132 L745 136 L738 140 L738 136"/>
+        <path d="M867 136 H883 L883 132 L890 136 L883 140 L883 136"/>
+        <path d="M1012 136 H1028 L1028 132 L1035 136 L1028 140 L1028 136"/>
+      </g>
+
+    <!-- OFFLINE PROCESS -->
+<rect x="20" y="190" width="1137" height="82" rx="8"
+      fill="var(--bg-alt)"
+      stroke="var(--line)"
+      stroke-dasharray="4 4"/>
+
+<text x="225" y="239"
+      fill="var(--text)"
+      font-size="14"
+      font-weight="600"
+      text-anchor="middle">
+  OFFLINE PROCESS
+</text>
+
+<line x1="380" y1="202" x2="380" y2="260" stroke="var(--line)"/>
+
+<g fill="var(--panel)" stroke="var(--copper)">
+  <rect x="415" y="208" width="220" height="48" rx="8"/>
+  <rect x="680" y="208" width="220" height="48" rx="8"/>
+  <rect x="945" y="208" width="180" height="48" rx="8"/>
+</g>
+
+<g fill="var(--text)"
+   font-size="13"
+   font-weight="600"
+   text-anchor="middle">
+  <text x="525" y="238">X-RAY</text>
+  <text x="790" y="238">FCT / ICT</text>
+  <text x="1035" y="238">CONFORMAL COATING</text>
+</g>
+
+<g fill="var(--muted)"
+   font-size="20"
+   text-anchor="middle">
+  <text x="657" y="238">→</text>
+  <text x="922" y="238">→</text>
+</g>
+    </svg>
   </div>
 
 </section>

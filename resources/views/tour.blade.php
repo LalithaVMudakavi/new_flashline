@@ -8,7 +8,7 @@
 <section class="section" id="tour">
 
     <div class="section-head reveal">
-        <span class="section-no">05</span>
+        <span class="section-no">06</span>
 
         <h2>
             Walk the floor,<br>
@@ -16,8 +16,8 @@
         </h2>
 
         <p>
-            A full 3D scan of the facility — step through the SMT lines,
-            inspection bays and box-build area exactly as they stand today.
+            A full 3D scan of the facility — 
+            step through the SMT Lines,Through Hole Lines, inspection bays exactly as they stand today.
             No appointment needed.
         </p>
     </div>

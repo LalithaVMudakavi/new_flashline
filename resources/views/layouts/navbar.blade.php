@@ -25,40 +25,50 @@
     </button>
 
     <nav class="rail-nav" id="railNav" aria-label="Main">
+         <a href="{{ route('company') }}"
+           class="{{ request()->routeIs('company') ? 'active' : '' }}">
+            <i>01</i>Company
+        </a>
 
         <a href="{{ route('services') }}"
            class="{{ request()->routeIs('services') ? 'active' : '' }}">
-            <i>01</i>Services
+            <i>02</i>Services
         </a>
 
         <a href="{{ route('capabilities') }}"
            class="{{ request()->routeIs('capabilities') ? 'active' : '' }}">
-            <i>02</i>Capabilities
+            <i>03</i>Capabilities
         </a>
 
-        <a href="{{ route('industries') }}"
-           class="{{ request()->routeIs('industries') ? 'active' : '' }}">
-            <i>03</i>Industries
-        </a>
-
-        <a href="{{ route('process') }}"
+         <a href="{{ route('process') }}"
            class="{{ request()->routeIs('process') ? 'active' : '' }}">
             <i>04</i>Process
         </a>
 
-        <a href="{{ route('tour') }}"
-           class="{{ request()->routeIs('tour') ? 'active' : '' }}">
-            <i>05</i>Tour
+        <a href="{{ route('industries') }}"
+           class="{{ request()->routeIs('industries') ? 'active' : '' }}">
+            <i>05</i>Industries
         </a>
 
-        <a href="{{ route('company') }}"
-           class="{{ request()->routeIs('company') ? 'active' : '' }}">
-            <i>06</i>Company
+
+        <a href="{{ route('tour') }}"
+           class="{{ request()->routeIs('tour') ? 'active' : '' }}">
+            <i>06</i>Virtual Tour
         </a>
 
         <a href="{{ route('contact') }}"
            class="{{ request()->routeIs('contact') ? 'active' : '' }}">
             <i>07</i>Contact
+        </a>
+
+        <a href="{{ route('event-news') }}"
+           class="{{ request()->routeIs('event-news') ? 'active' : '' }}">
+            <i>08</i>News
+        </a>
+
+         <a href="{{ route('downloads') }}"
+           class="{{ request()->routeIs('downloads') ? 'active' : '' }}">
+            <i>09</i>Downloads
         </a>
 
     </nav>
